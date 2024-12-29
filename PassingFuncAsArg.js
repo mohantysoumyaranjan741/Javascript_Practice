@@ -5,6 +5,7 @@ function greetUser(name, callback) {
 
 function logMessage(msg) {
     console.log(msg);
+    
 }
 
 greetUser("Alice", logMessage); // Output: Hello, Alice!

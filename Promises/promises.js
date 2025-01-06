@@ -11,8 +11,17 @@ const mypromises=()=>{
      } },1000)
     })
 }
+const Promise1=()=>{
+    return new Promise(resolve=>{
+        setTimeout(()=>resolve("resolved successfully"),1000)
+    })
+}
 
 mypromises()
+.then(data=>{
+    console.log(data)
+    return Promise1()
+})
 .then(data=>{
     console.log(data)
 })
